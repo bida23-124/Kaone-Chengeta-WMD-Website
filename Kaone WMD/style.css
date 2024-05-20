@@ -1,0 +1,476 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  color: White;
+  background-image: url('background.gif'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+/* Header styles */
+header {
+  background-color: dark gray; 
+  color: white; 
+  padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; 
+  background-color: transparent; 
+}
+
+nav:hover {
+  box-shadow: 0 2px 4px gray, 0.1); 
+  background-color: dark gray; 
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: White; 
+  transition: all 0.2s ease-in-out; 
+}
+
+nav ul li a:hover {
+  text-decoration: underline; 
+  color: Gray; 
+}
+
+
+/* Logo styles */
+nav a img {
+  width: 30px; 
+  height: auto; 
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+}
+
+
+/* Welcome text styles */
+.welcome-text {
+  text-align: center; 
+  margin: 0 auto; 
+}
+
+.welcome-text p {
+  font-size: 24px; 
+  margin-bottom: 20px; 
+}
+
+
+/* Button styles */
+.button {
+  display: block; 
+  width: fit-content; 
+  padding: 10px 20px;
+  background-color: Blue; 
+  color: white; 
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; 
+}
+
+.button:hover {
+  background-color: dark blue; 
+}
+
+/* Footer styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: dark gray; 
+  color: white; 
+  text-align: center;
+  transition: box-shadow 0.3s ease; 
+}
+
+footer:hover {
+  box-shadow: 0 2px 4px Gray; 
+}
+
+footer a {
+  color: white; 
+  text-decoration: none;
+  margin: 0 10px;
+ 
+}
+
+footer a:hover {
+  text-decoration: underline; 
+  color: blue; 
+}
+
+/*remove rgb*/
+
+/* Feedback form styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black; /* Font color set to black */
+}
+
+form {
+  background-color: dark gray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black; /* Font color set to black */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black; /* Font color set to black */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: black; /* Font color set to black */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button {
+  display: block; /* Change display to block */
+  width: fit-content; /* Adjust width to fit content */
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+/* New section styles */
+section {
+  margin-top: 20px; /* Add margin at the top of each section */
+  display: flex; /* Use flexbox to layout sections horizontally */
+  justify-content: space-between; /* Evenly distribute the blocks along the screen */
+}
+
+.media-container {
+  margin-right: 20px; /* Add margin between media containers */
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+/* Add this to your existing CSS file */
+.media-container img {
+  width: 180px;
+  height: 230px;
+  display: block;
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+
+.media-container img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+}
+.movies-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.movie-container {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.movie-container img {
+  width: 200px;
+  height: 280px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  text-align: left; /* Align the details in the center */
+}
+
+.movie-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center; /* Center-align the heading */
+}
+
+
+.movie-details p {
+  font-size: 14px;
+  color: white;
+}
+
+/*movie*/
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling movie containers in movie page */
+.movie-container {
+  width: 400px;
+  margin: 0 auto 20px; /* Center the container horizontally and add bottom margin */
+  border: 1px solid transparent; /* Border set to transparent */
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center; /* Align contents in the center */
+}
+
+.movie-container img {
+  width: 200px; /* Set the width of the image */
+  height: 270px; /* Set the height of the image */
+  display: inline-block; /* Align image in the center */
+}
+
+.movie-details {
+  padding: 20px;
+}
+
+.movie-details h3 {
+  margin-bottom: 10px;
+}
+
+.movie-details p {
+  margin-bottom: 20px;
+}
+
+/* Styling the "GET TICKET" button */
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/*TICKET*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.ticket-form {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #000; /* Set font color to black */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+/*Games*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.game {
+    margin-bottom: 20px;
+}
+
+.game h2 {
+    color: #555;
+}
+
+.game p {
+    color: #777;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.game a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game a:hover img {
+    opacity: 0.8;
+}
